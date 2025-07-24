@@ -9,7 +9,8 @@
 
 body {
   font-family: "Fira Code", monospace;
-  font-size: small;
+  font-size:small;
+  font-weight: 500;
 }
 
 .bitcount-prop-single-uniquifier {
