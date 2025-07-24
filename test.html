@@ -1,0 +1,83 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Code Block UI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .highlight {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-gray-950 text-white min-h-screen flex items-center justify-center p-6"
+  >
+    <div
+      class="w-full max-w-3xl rounded-lg bg-slate-900 p-4 font-mono text-sm relative"
+    >
+      <!-- Top: Filename & Copy -->
+      <div class="flex justify-between items-center mb-3">
+        <span class="text-xs text-zinc-400">HomePage.java</span>
+        <button
+          onclick="copyCode()"
+          class="text-xs text-zinc-400 hover:text-zinc-200 transition"
+          id="copyBtn"
+        >
+          <span class="material-symbols-outlined" style="font-size: 13px">
+            content_copy
+          </span>
+          Copy
+        </button>
+      </div>
+
+      <!-- Code block -->
+      <pre class="whitespace-pre overflow-x-auto" id="codeBlock"><code>
+<span class="text-slate-500 select-none">1&nbsp;</span><span class="text-purple-400">public class</span> <span class="text-blue-400">HomePage</span> {
+<span class="text-slate-500 select-none">2&nbsp;</span>  <span class="text-purple-400">public static class</span> <span class="text-blue-400">DeveloperInfo</span> {
+<span class="text-slate-500 select-none">3&nbsp;</span>    <span class="text-purple-400">String</span> <span class="text-white">name</span>;
+<span class="text-slate-500 select-none">4&nbsp;</span>    <span class="text-purple-400">String</span> <span class="text-white">role</span>;
+<span class="text-slate-500 select-none">5&nbsp;</span>    <span class="text-purple-400">String</span> <span class="text-white">bio</span>;
+<span class="text-slate-500 select-none">6&nbsp;</span>
+<span class="text-slate-500 select-none">7&nbsp;</span>    <span class="text-purple-400">public</span> <span class="text-blue-400">DeveloperInfo</span>(<span class="text-purple-400">String</span> name, <span class="text-purple-400">String</span> role, <span class="text-purple-400">String</span> bio) {
+<span class="text-slate-500 select-none">8&nbsp;</span>      <span class="text-white">this</span>.name = name;
+<span class="text-slate-500 select-none">9&nbsp;</span>      <span class="text-white">this</span>.role = role;
+<span class="text-slate-500 select-none">10</span>      <span class="text-white">this</span>.bio = bio;
+<span class="text-slate-500 select-none">11</span>    }
+<span class="text-slate-500 select-none">12</span>  }
+<span class="text-slate-500 select-none">13</span>
+<span class="text-slate-500 select-none">14</span>  <span class="text-purple-400">public static void</span> <span class="text-blue-400">main</span>(<span class="text-purple-400">String</span>[] args) {
+<span class="text-slate-500 select-none highlight">15</span>    DeveloperInfo dev = <span class="text-keyword">new</span> DeveloperInfo(
+<span class="text-slate-500 select-none">16</span>      <span class="text-green-400">"Aaditya Kolhapure"</span>,
+<span class="text-slate-500 select-none">17</span>      <span class="text-green-400">"Java Developer"</span>,
+<span class="text-slate-500 select-none">18</span>      <span class="text-green-400">"Building scalable and efficient web applications with Java and Laravel."</span>
+<span class="text-slate-500 select-none">19</span>    );
+<span class="text-slate-500 select-none">20</span>
+<span class="text-slate-500 select-none">21</span>    System.out.println(<span class="text-green-400">"=== "</span> + dev.name + <span class="text-green-400">" | Portfolio ===\n"</span>);
+<span class="text-slate-500 select-none">22</span>    System.out.println(<span class="text-green-400">"Name: "</span> + dev.name);
+<span class="text-slate-500 select-none">23</span>    System.out.println(<span class="text-green-400">"Role: "</span> + dev.role);
+<span class="text-slate-500 select-none">24</span>    System.out.println(<span class="text-green-400">"Bio: "</span> + dev.bio);
+<span class="text-slate-500 select-none">25</span>    System.out.println(<span class="text-green-400">"\n[ View Projects ] -> /projects"</span>);
+<span class="text-slate-500 select-none">26</span>  }
+<span class="text-slate-500 select-none">27</span>}
+</code></pre>
+    </div>
+
+    <script>
+      function copyCode() {
+        const code = document.getElementById("codeBlock").innerText;
+        navigator.clipboard.writeText(code).then(() => {
+          const btn = document.getElementById("copyBtn");
+          btn.innerText = "✅ Copied";
+          setTimeout(() => (btn.innerText = "📋 Copy"), 2000);
+        });
+      }
+    </script>
+  </body>
+</html>

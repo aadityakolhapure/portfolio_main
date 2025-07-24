@@ -7,6 +7,19 @@
   animation: spin 1s linear infinite;
 }
 
+body {
+  font-family: "Fira Code", monospace;
+  font-size: small;
+}
+
+.bitcount-prop-single-uniquifier {
+  font-family: "Bitcount Prop Single", system-ui;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "CRSV" 0.5, "ELSH" 0, "ELXP" 0;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -15,6 +28,21 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeSlideUp {
+  animation: fadeSlideUp 1s ease-out both;
 }
 
 ::-webkit-scrollbar {
