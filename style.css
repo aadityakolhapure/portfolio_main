@@ -43,7 +43,7 @@ body {
 }
 
 .animate-fadeSlideUp {
-  animation: fadeSlideUp 1s ease-out both;
+  animation: fadeSlideUp 2s ease-out both;
 }
 
 ::-webkit-scrollbar {
