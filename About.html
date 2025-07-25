@@ -8,7 +8,7 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
       rel="stylesheet"
     />
-    <title>Aaditya-Kolhapure</title>
+    <title>Aaditya-Kolhapure-AboutUs</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
@@ -371,7 +371,7 @@
             >
               <div class="text-purple-700 dark:text-gray-300">
                 <ul
-                  class="flex items-center text-gray-800 dark:text-gray-300 bg-gray-200 pl-8 p-2 ml-[-27px] mr-[-27px]"
+                  class="flex items-center text-gray-800 dark:text-gray-300 pl-8 p-2 ml-[-27px] mr-[-27px]"
                 >
                   <li>
                     <a
@@ -389,14 +389,16 @@
                           d="m3 2 1.578 17.824L12 22l7.467-2.175L21 2H3Zm14.049 6.048H9.075l.172 2.016h7.697l-.626 6.565-4.246 1.381-4.281-1.455-.288-2.932h2.024l.16 1.411 2.4.815 2.346-.763.297-3.005H7.416l-.562-6.05h10.412l-.217 2.017Z"
                         />
                       </svg>
-                      <span class="text-gray-800 hover:scale-110"
+                      <span class="text-[#757581] hover:scale-110"
                         >Home.html</span
                       >
                     </a>
                   </li>
                 </ul>
 
-                <ul class="flex items-center space-x-4 mt-2">
+                <ul
+                  class="flex items-center text-gray-800 dark:text-gray-300 bg-gray-200 pl-8 p-2 ml-[-27px] mr-[-27px]"
+                >
                   <li>
                     <a
                       href="About.html"
@@ -416,7 +418,7 @@
                           d="M12.215 13.773a1.792 1.792 0 1 0-1.786-1.8v.006a1.787 1.787 0 0 0 1.786 1.794Z"
                         />
                       </svg>
-                      <span class="md:inline text-[#757581] hover:scale-110"
+                      <span class="md:inline text-gray-800 hover:scale-110"
                         >About_Us.jsx</span
                       >
                     </a>
@@ -547,9 +549,7 @@
         </div>
       </aside>
 
-      <div
-        class="p-4 sm:ml-64 overflow-y-hidden overflow-x-hidden bg-[url('bck.jpeg')] bg-cover bg-center h-screen backdrop-blur-lg"
-      >
+      <div class="p-4 sm:ml-64 bg-center h-full backdrop-blur-lg mb-16 lg:mb-0">
         <div class="absolute inset-0 bg-black/20 backdrop-blur-lg">
           <!-- header -->
           <div
@@ -592,7 +592,7 @@
                   />
                 </svg>
                 <span
-                  class="text-gray-900 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-purple-500 after:transition-all after:duration-300 group-hover:after:w-full hover:scale-105"
+                  class="text-[#757581] relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-purple-500 after:transition-all after:duration-300 group-hover:after:w-full hover:scale-105"
                 >
                   Home.html
                 </span>
@@ -620,7 +620,7 @@
                 </svg>
 
                 <span
-                  class="md:inline text-[#757581] relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-purple-500 after:transition-all after:duration-300 group-hover:after:w-full"
+                  class="md:inline text-gray-900 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-purple-500 after:transition-all after:duration-300 group-hover:after:w-full"
                 >
                   About_Us.jsx
                 </span>
@@ -741,116 +741,35 @@
           <!-- body -->
 
           <div
-            class="h-auto w-full flex mt-26 mb-5 ml-10 justify-center align-items-center flex-row sm:flex-col md:flex-row lg:flex-row xl:flex-row"
+            class="min-h-screen bg-white text-purple-900 flex items-center justify-center p-4 overflow-y-auto"
           >
-            <!-- code info -->
-            <div
-              class="text-gray-700 overflow-auto flex items-center justify-center p-6 align-center hidden sm:hidden md:hidden lg:block xl:block"
-            >
-              <div
-                class="w-full max-w-3xl rounded-lg bg-slate-200 p-4 font-mono text-sm relative"
-              >
-                <!-- Top: Filename & Copy -->
-                <div class="flex justify-between items-center mb-3">
-                  <span class="text-xs text-zinc-600">HomePage.java</span>
-                  <button
-                    onclick="copyCode()"
-                    class="text-xs text-zinc-600 hover:text-zinc-700 transition"
-                    id="copyBtn"
-                  >
-                    <span
-                      class="material-symbols-outlined"
-                      style="font-size: 13px"
-                    >
-                      content_copy
-                    </span>
-                    Copy
-                  </button>
-                </div>
-
-                <!-- Code block -->
-                <pre
-                  class="whitespace-pre overflow-x-scroll text-xs text-gray-700"
-                  id="codeBlock"
-                ><code>
-<span class="text-slate-600 select-none">1&nbsp;</span><span class="text-purple-600">public class</span> <span class="text-blue-600">HomePage</span> {
-<span class="text-slate-600 select-none">2&nbsp;</span>  <span class="text-purple-600">public static class</span> <span class="text-blue-600">DeveloperInfo</span> {
-<span class="text-slate-600 select-none">3&nbsp;</span>    <span class="text-purple-600">String</span> <span class="text-gray-700">name</span>;
-<span class="text-slate-600 select-none">4&nbsp;</span>    <span class="text-purple-600">String</span> <span class="text-gray-700">role</span>;
-<span class="text-slate-600 select-none">5&nbsp;</span>    <span class="text-purple-600">String</span> <span class="text-gray-700">bio</span>;
-<span class="text-slate-600 select-none">6&nbsp;</span>
-<span class="text-slate-600 select-none">7&nbsp;</span>    <span class="text-purple-600">public</span> <span class="text-blue-600">DeveloperInfo</span>(<span class="text-purple-600">String</span> name, <span class="text-purple-600">String</span> role, <span class="text-purple-600">String</span> bio) {
-<span class="text-slate-600 select-none">8&nbsp;</span>      <span class="text-gray-700">this</span>.name = name;
-<span class="text-slate-600 select-none">9&nbsp;</span>      <span class="text-gray-700">this</span>.role = role;
-<span class="text-slate-600 select-none">10</span>      <span class="text-gray-700">this</span>.bio = bio;
-<span class="text-slate-600 select-none">11</span>    }
-<span class="text-slate-600 select-none">12</span>  }
-<span class="text-slate-600 select-none">13</span>
-<span class="text-slate-600 select-none">14</span>  <span class="text-purple-600">public static void</span> <span class="text-blue-600">main</span>(<span class="text-purple-600">String</span>[] args) {
-<span class="text-slate-600 select-none highlight">15</span>    DeveloperInfo dev = <span class="text-keyword">new</span> DeveloperInfo(
-<span class="text-slate-600 select-none">16</span>      <span class="text-green-600">"Aaditya Kolhapure"</span>,
-<span class="text-slate-600 select-none">17</span>      <span class="text-green-600">"Java Developer"</span>,
-<span class="text-slate-600 select-none">18</span>      <span class="text-green-600">"Building scalable and efficient web applications with Java and Laravel."</span>
-<span class="text-slate-600 select-none">19</span>    );
-<span class="text-slate-600 select-none">20</span>
-<span class="text-slate-600 select-none">21</span>    System.out.println(<span class="text-green-600">"=== "</span> + dev.name + <span class="text-green-600">" | Portfolio ===\n"</span>);
-<span class="text-slate-600 select-none">22</span>    System.out.println(<span class="text-green-600">"Name: "</span> + dev.name);
-<span class="text-slate-600 select-none">23</span>    System.out.println(<span class="text-green-600">"Role: "</span> + dev.role);
-<span class="text-slate-600 select-none">24</span>    System.out.println(<span class="text-green-600">"Bio: "</span> + dev.bio);
-<span class="text-slate-600 select-none">25</span>    System.out.println(<span class="text-green-600">"\n[ View Projects ] -> /projects"</span>);
-<span class="text-slate-600 select-none">26</span>  }
-<span class="text-slate-600 select-none">27</span>}
-</code></pre>
-              </div>
-            </div>
-
-            <!-- info -->
-            <div
-              class="flex flex-col items-start justify-center text-start md:p-16 sm:p-20 lg:p-6 animate-fadeSlideUp m-6 align-center"
-            >
-              <h2
-                class="font-bold text-[50px] text-slate-900"
-                style="
-                  font-family: 'Poppins', 'Trebuchet MS', 'Lucida Sans Unicode',
-                    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                  letter-spacing: 4px;
-                  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-                "
-              >
-                Aaditya
-              </h2>
-              <h2
-                class="font-bold text-[50px] text-gradient text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-blue-700"
-                style="
-                  font-family: 'Poppins', 'Trebuchet MS', 'Lucida Sans Unicode',
-                    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                  letter-spacing: 4px;
-                  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-                "
-              >
-                Kolhapure
-              </h2>
-              <div class="group inline-block">
-                <div class="text-[#471396] text-[25px] font-bold">
-                  <span id="typing-text"></span
-                  ><span
-                    class="border-r-2 border-purple-500 animate-pulse ml-1"
-                  ></span>
-                </div>
-              </div>
-
-              <p class="text-gray-700 text-sm font-semibold mt-4">
-                Building scalable and efficient web applications with Java and
-                Laravel.
-              </p>
-              <div class="flex items-center space-x-4 mt-6">
-                <a
-                  class="bg-[#471396] text-white py-2 px-4 rounded hover:bg-purple-700 transition duration-300 hover:scale-105"
-                  href="Project.html"
+            <div class="w-full max-w-5xl bg-white rounded-lg shadow-lg p-6">
+              <!-- Header Section -->
+              <div class="text-center">
+                <h1 class="text-5xl font-extrabold">Aaditya Kolhapure</h1>
+                <span class="text-lg font-medium block mt-2"
+                  >FULL STACK DEVELOPER</span
                 >
-                  View Projects ->
-                </a>
+                <p class="mt-4">
+                  I'm focused on backend development with <span class="text-purple-500 underline">Java</span>, but you'll also
+                  find me working with <span class="text-purple-500 underline">Laravel</span>, <span class="text-purple-500 underline">MySQL</span>, and <span class="text-purple-500 underline">Express</span> while
+                  building the backend for my personal projects.
+                </p>
               </div>
+
+              <!-- GitHub Graph -->
+              <section class="mt-10">
+                <h2 class="text-3xl font-extrabold text-center mb-6">
+                  My GitHub Activity
+                </h2>
+                <div class="bg-purple-50 p-6 rounded-xl shadow-md">
+                  <img
+                    src="https://ghchart.rshah.org/6B21A8/aadityakolhapure"
+                    alt="GitHub Contribution Graph"
+                    class="mx-auto w-full max-w-3xl"
+                  />
+                </div>
+              </section>
             </div>
           </div>
         </div>
@@ -899,44 +818,5 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({ once: true });
-    </script> -->
-
-    <script>
-      const phrases = [
-        "Full Stack Developer",
-        "Java Developer",
-        "Backend Developer",
-        "Software Engineer",
-      ];
-      const el = document.getElementById("typing-text");
-      let phraseIndex = 0;
-      let charIndex = 0;
-      let typing = true;
-
-      function typeLoop() {
-        let currentPhrase = phrases[phraseIndex];
-        if (typing) {
-          el.textContent = currentPhrase.slice(0, ++charIndex);
-          if (charIndex === currentPhrase.length) {
-            typing = false;
-            setTimeout(typeLoop, 2000); // pause before deleting
-            return;
-          }
-        } else {
-          el.textContent = currentPhrase.slice(0, --charIndex);
-          if (charIndex === 0) {
-            typing = true;
-            phraseIndex = (phraseIndex + 1) % phrases.length;
-          }
-        }
-        setTimeout(typeLoop, typing ? 100 : 50); // typing speed
-      }
-
-      typeLoop();
-    </script>
   </body>
 </html>
