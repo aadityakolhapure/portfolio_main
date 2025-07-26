@@ -553,7 +553,7 @@
         <div class="absolute inset-0 bg-black/20 backdrop-blur-lg">
           <!-- header -->
           <div
-            class="h-auto w-full bg-slate-100 border-b border-[#471396] fixed top-0 lg:mt-12 mt-12 md:mt-16 display flex items-center px-4 flex-wrap p-3 hidden lg:flex md:hidden"
+            class="h-auto w-full bg-slate-100 border-b border-[#471396] fixed top-0 lg:mt-12 mt-12 md:mt-16 display flex items-center px-4 flex-wrap p-3 hidden lg:flex md:hidden fixed-top-0 z-10"
           >
             <div
               class="flex items-center space-x-2 border-r border-[#471396] pl-6 pr-4"
@@ -741,46 +741,108 @@
           <!-- body -->
 
           <div
-            class="min-h-screen bg-slate-100 text-purple-900 flex items-center justify-center p-4 overflow-y-auto mt-6"
+            class="min-h-screen bg-slate-100 text-purple-900 flex flex-col md:flex-row items-start justify-center gap-6 p-4 overflow-auto mt-16 lg:mt-24 lg:ml-6"
           >
-            <div>
-              <img src="" alt="">
-            </div>
+            <!-- Profile Card -->
             <div
-              class="w-full max-w-5xl bg-white rounded-lg shadow-lg p-6 animate-fadeSlideUp transition-transform duration-500 ease-in-out"
+              class="w-full md:w-1/2 bg-white rounded-2xl shadow-md p-6 md:p-8"
             >
-              <!-- Header Section -->
               <div class="text-center">
+                <img
+                  src="profile.jpg"
+                  alt="Profile Picture"
+                  class="w-24 h-24 md:w-28 md:h-28 rounded-full mx-auto mb-4 object-cover shadow-md"
+                />
                 <h1
-                  class="text-5xl font-extrabold p-4 transition-colors hover:scale-105"
+                  class="text-2xl md:text-3xl font-bold text-gray-800 hover:scale-105 transition-transform"
                 >
                   Aaditya Kolhapure
                 </h1>
-                <span class="text-lg font-medium block mt-2"
-                  >FULL STACK DEVELOPER</span
+                <p
+                  class="text-xs md:text-sm text-gray-500 mt-1 tracking-wide uppercase"
                 >
-                <p class="mt-4">
-                  I'm focused on backend development with
-                  <span class="text-purple-500 underline">Java</span>, but
-                  you'll also find me working with
-                  <span class="text-purple-500 underline">Laravel</span>,
-                  <span class="text-purple-500 underline">MySQL</span>, and
-                  <span class="text-purple-500 underline">React</span> while
-                  building the backend for my personal projects.
+                  Full Stack Developer
                 </p>
-              </div>
+                <p
+                  class="mt-4 text-gray-700 leading-relaxed text-sm md:text-base"
+                >
+                  I specialize in backend development using
+                  <span class="text-purple-600 font-medium">Java</span>, and
+                  build robust systems with
+                  <span class="text-purple-600 font-medium">Laravel</span>,
+                  <span class="text-purple-600 font-medium">MySQL</span>, and
+                  <span class="text-purple-600 font-medium">React</span>.
+                </p>
 
-              <!-- GitHub Graph -->
-              <section class="mt-10">
+                <ul
+                  class="mt-6 space-y-3 text-left text-gray-700 text-sm md:text-base"
+                >
+                  <li class="flex items-start gap-2">
+                    ✅
+                    <span>
+                      Developed full-stack projects with
+                      <span class="font-medium text-indigo-600"
+                        >role-based access</span
+                      >,
+                      <span class="font-medium text-indigo-600"
+                        >dynamic dashboards</span
+                      >, and
+                      <span class="font-medium text-indigo-600"
+                        >API integrations</span
+                      >.
+                    </span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    🧠
+                    <span>
+                      Learning
+                      <span class="font-medium text-blue-600"
+                        >advanced Java</span
+                      >,
+                      <span class="font-medium text-blue-600">Supabase</span>,
+                      and
+                      <span class="font-medium text-blue-600">Next.js</span> to
+                      build <span class="italic">AI-first applications</span>.
+                    </span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    🛠️
+                    <span>
+                      Comfortable with <span class="font-medium">Git</span>,
+                      <span class="font-medium">GitHub</span>,
+                      <span class="font-medium">VS Code</span>, and other modern
+                      dev tools.
+                    </span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    🏆
+                    <span>
+                      Secured
+                      <span class="font-semibold text-green-600"
+                        >3rd place</span
+                      >
+                      in the
+                      <span class="italic"
+                        >Red Hat India Final Challenge 2024</span
+                      >.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- GitHub Card -->
+            <div
+              class="w-full md:w-1/2 bg-white rounded-2xl shadow-md p-6 md:p-8"
+            >
+              <div>
                 <h2
-                  class="text-3xl font-extrabold text-center mb-6 hover:scale-105"
+                  class="text-2xl md:text-3xl font-extrabold text-center mb-4 hover:scale-105 transition-transform"
                 >
                   My GitHub Activity
                 </h2>
-                <span
-                  class="flex justify-center mb-2 text-gray-800 text-sm font-medium flex-row items-center space-x-2"
-                >
-                  <!-- github icons -->
+
+                <div class="flex justify-center mb-4">
                   <a
                     href="https://github.com/aadityakolhapure/"
                     target="_blank"
@@ -788,10 +850,6 @@
                   >
                     <svg
                       class="w-5 h-5 text-gray-800"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
@@ -801,25 +859,27 @@
                         clip-rule="evenodd"
                       />
                     </svg>
-                    <span class="text-gray-800 ml-2">GitHub Profile</span>
+                    <span class="text-gray-800">GitHub Profile</span>
                   </a>
-                </span>
-                <div class="bg-purple-50 p-6 rounded-xl shadow-md">
+                </div>
+
+                <div class="bg-purple-50 p-4 md:p-6 rounded-xl shadow-md">
                   <img
                     src="https://ghchart.rshah.org/6B21A8/aadityakolhapure"
                     alt="GitHub Contribution Graph"
                     class="mx-auto w-full max-w-3xl"
                   />
                 </div>
-                <div class="flex flex-col items-center mt-1">
-                  <h1
-                    class="text-sm font-small text-black underline"
+
+                <div class="text-center mt-4">
+                  <h3
+                    class="text-sm font-medium text-black underline"
                     id="repoCount"
                   >
                     GitHub Repo Count:
-                  </h1>
+                  </h3>
                 </div>
-              </section>
+              </div>
             </div>
           </div>
         </div>
