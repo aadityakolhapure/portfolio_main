@@ -741,10 +741,10 @@
           <!-- body -->
 
           <div
-            class="min-h-screen bg-slate-100 text-purple-900 flex items-center justify-center p-4 overflow-y-auto"
+            class="min-h-screen bg-slate-100 text-purple-900 flex items-center justify-center p-4 overflow-y-auto mt-6"
           >
             <div
-              class="w-full max-w-5xl bg-white rounded-lg shadow-lg p-6 animate-fadeSlideUp"
+              class="w-full max-w-5xl bg-white rounded-lg shadow-lg p-6 animate-fadeSlideUp transition-transform duration-500 ease-in-out"
             >
               <!-- Header Section -->
               <div class="text-center">
@@ -774,9 +774,15 @@
                 >
                   My GitHub Activity
                 </h2>
-                <span class="flex justify-center mb-2 text-gray-800 text-sm font-medium flex-row items-center space-x-2">
+                <span
+                  class="flex justify-center mb-2 text-gray-800 text-sm font-medium flex-row items-center space-x-2"
+                >
                   <!-- github icons -->
-                  <a href="https://github.com/aadityakolhapure/" target="_blank" class="flex items-center space-x-2 underline hover:text-purple-500">
+                  <a
+                    href="https://github.com/aadityakolhapure/"
+                    target="_blank"
+                    class="flex items-center space-x-2 underline hover:text-purple-500"
+                  >
                     <svg
                       class="w-5 h-5 text-gray-800"
                       aria-hidden="true"
@@ -801,6 +807,16 @@
                     alt="GitHub Contribution Graph"
                     class="mx-auto w-full max-w-3xl"
                   />
+                </div>
+                <div
+                  class=" flex flex-col items-center mt-1"
+                >
+                  <h1
+                    class="text-sm font-small text-black underline"
+                    id="repoCount"
+                  >
+                    GitHub Repo Count:
+                  </h1>
                 </div>
               </section>
             </div>
@@ -851,5 +867,23 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script>
+      async function getRepoCount(username) {
+        try {
+          const response = await fetch(
+            `https://api.github.com/users/${username}`
+          );
+          const data = await response.json();
+          document.getElementById(
+            "repoCount"
+          ).textContent = `Total Repos: ${data.public_repos}`;
+        } catch (error) {
+          document.getElementById("repoCount").textContent =
+            "Failed to load repo count.";
+        }
+      }
+
+      getRepoCount("aadityakolhapure"); // replace 'octocat' with any GitHub username
+    </script>
   </body>
 </html>
