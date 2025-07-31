@@ -643,34 +643,57 @@
             class="min-h-screen bg-slate-100 text-purple-900 flex flex-col md:flex-row items-start justify-center gap-6 p-4 overflow-auto mt-16 lg:mt-24 lg:ml-6 md:mt-16 background-white">
             <!-- Profile Card -->
             <div
-              class="w-full md:w-1/2 bg-white rounded-2xl shadow-md p-6 md:p-8">
-              <div class="text-center">
+              class="bg-white rounded-2xl shadow-md p-6 md:p-8 max-w-md mx-auto">
+              <!-- VS Code Header -->
+              <div
+                class="flex items-center bg-purple-700 px-4 py-2 rounded-t-xl">
+                <span
+                  class="h-3 w-3 rounded-full border-2 border-purple-300 bg-white mr-2"></span>
+                <span
+                  class="h-3 w-3 rounded-full opacity-40 bg-white mr-2"></span>
+                <span class="h-3 w-3 rounded-full opacity-40 bg-white"></span>
+                <span class="ml-4 text-white font-bold tracking-wide"
+                  >About_Us.jsx</span
+                >
+              </div>
+
+              <!-- Main Content -->
+              <div
+                class="flex flex-col items-center text-center py-6 px-2 space-y-2">
+                <!-- Profile Image -->
                 <img
                   src="profile.jpg"
                   alt="Profile Picture"
-                  class="w-24 h-24 md:w-28 md:h-28 rounded-full mx-auto mb-4 object-cover shadow-md" />
+                  class="w-24 h-24 md:w-28 md:h-28 rounded-full mx-auto mb-4 object-cover shadow-md border-4 border-purple-200" />
+
+                <!-- Name -->
                 <h1
                   class="text-2xl md:text-3xl font-bold text-gray-800 hover:scale-105 transition-transform">
                   Aaditya Kolhapure
                 </h1>
+
+                <!-- Title -->
                 <p
                   class="text-xs md:text-sm text-gray-500 mt-1 tracking-wide uppercase">
                   Full Stack Developer
                 </p>
+
+                <!-- Short Bio -->
                 <p
                   class="mt-4 text-gray-700 leading-relaxed text-sm md:text-base">
                   I specialize in backend development using
-                  <span class="text-purple-600 font-medium">Java</span>, and
-                  build robust systems with
+                  <span class="text-purple-600 font-medium">Java</span>
+                  and build robust systems with
                   <span class="text-purple-600 font-medium">Laravel</span>,
                   <span class="text-purple-600 font-medium">MySQL</span>, and
                   <span class="text-purple-600 font-medium">React</span>.
                 </p>
 
+                <!-- Achievements and Extras -->
                 <ul
-                  class="mt-6 space-y-3 text-left text-gray-700 text-sm md:text-base">
+                  class="mt-6 space-y-3 text-left text-gray-700 text-sm md:text-base w-full max-w-xs mx-auto">
                   <li class="flex items-start gap-2">
-                    ✅
+                    <span>✅</span>
                     <span>
                       Developed full-stack projects with
                       <span class="font-medium text-indigo-600"
@@ -685,7 +708,7 @@
                     </span>
                   </li>
                   <li class="flex items-start gap-2">
-                    🧠
+                    <span>🧠</span>
                     <span>
                       Learning
                       <span class="font-medium text-blue-600"
@@ -698,7 +721,7 @@
                     </span>
                   </li>
                   <li class="flex items-start gap-2">
-                    🛠️
+                    <span>🛠️</span>
                     <span>
                       Comfortable with <span class="font-medium">Git</span>,
                       <span class="font-medium">GitHub</span>,
@@ -707,7 +730,7 @@
                     </span>
                   </li>
                   <li class="flex items-start gap-2">
-                    🏆
+                    <span>🏆</span>
                     <span>
                       Secured
                       <span class="font-semibold text-green-600"
