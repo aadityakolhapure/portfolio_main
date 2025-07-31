@@ -1,4 +1,4 @@
- <aside
+   <aside
         id="logo-sidebar"
         class="fixed top-0 left-0 z-40 w-70 h-screen pt-18 md:pt-18 lg:pt-14 transition-transform -translate-x-full bg-white sm:translate-x-0 dark:bg-gray-800"
         aria-label="Sidebar"
