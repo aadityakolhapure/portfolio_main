@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,78 +5,257 @@
     <title>Code Block UI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet" />
     <style>
       .highlight {
         background-color: rgba(255, 255, 255, 0.1);
       }
     </style>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-      rel="stylesheet"
-    />
   </head>
-  <body
-    class="bg-gray-950 text-white min-h-screen flex items-center justify-center p-6"
-  >
+  <body class="bg-gray-900 text-white">
+ 
     <div
-      class="w-full max-w-3xl rounded-lg bg-slate-900 p-4 font-mono text-sm relative"
-    >
-      <!-- Top: Filename & Copy -->
-      <div class="flex justify-between items-center mb-3">
-        <span class="text-xs text-zinc-400">HomePage.java</span>
-        <button
-          onclick="copyCode()"
-          class="text-xs text-zinc-400 hover:text-zinc-200 transition"
-          id="copyBtn"
-        >
-          <span class="material-symbols-outlined" style="font-size: 13px">
-            content_copy
-          </span>
-          Copy
-        </button>
+      class="min-h-screen flex flex-col items-center p-4 sm:p-6 overflow-x-hidden">
+     
+      <div class="w-full max-w-6xl flex flex-col gap-12">
+        
+        <section class="bg-white shadow-lg rounded-xl p-8">
+          <h2 class="text-2xl font-bold text-center mb-8 text-gray-800">
+            Front-end
+          </h2>
+          <div class="flex flex-wrap justify-center gap-6">
+          
+            <div
+              class="w-32 h-32 rounded-full relative flex items-center justify-center"
+              style="background: conic-gradient(red 0% 85%, #e5e7eb 60% 100%)">
+              <div
+                class="absolute w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                <span class="text-lg font-semibold text-blue-600">HTML</span>
+              </div>
+            </div>
+
+            <!-- CSS -->
+            <div
+              class="w-32 h-32 rounded-full relative flex items-center justify-center"
+              style="
+                background: conic-gradient(#3b82f6 0% 60%, #e5e7eb 60% 100%);
+              ">
+              <div
+                class="absolute w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                <span class="text-lg font-semibold text-blue-600">CSS</span>
+              </div>
+            </div>
+
+            <!-- Tailwind -->
+            <div
+              class="w-32 h-32 rounded-full relative flex items-center justify-center"
+              style="
+                background: conic-gradient(skyblue 0% 70%, #e5e7eb 60% 100%);
+              ">
+              <div
+                class="absolute w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                <span class="text-lg font-semibold text-blue-600"
+                  >Tailwind</span
+                >
+              </div>
+            </div>
+
+            <!-- Bootstrap -->
+            <div
+              class="w-32 h-32 rounded-full relative flex items-center justify-center"
+              style="
+                background: conic-gradient(purple 0% 60%, #e5e7eb 60% 100%);
+              ">
+              <div
+                class="absolute w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                <span class="text-lg font-semibold text-blue-600"
+                  >Bootstrap</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Java Card -->
+        <section class="bg-white shadow-lg rounded-xl p-8">
+          <h2 class="text-2xl font-bold text-center mb-8 text-gray-800">
+            Java
+          </h2>
+          <div class="flex flex-wrap justify-center gap-6">
+            <!-- Core Java -->
+            <div
+              class="w-32 h-32 rounded-full relative flex items-center justify-center"
+              style="
+                background: conic-gradient(#f59e0b 0% 75%, #e5e7eb 75% 100%);
+              ">
+              <div
+                class="absolute w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                <span class="text-sm font-semibold text-yellow-600 text-center"
+                  >Core Java</span
+                >
+              </div>
+            </div>
+
+            <!-- OOP -->
+            <div
+              class="w-32 h-32 rounded-full relative flex items-center justify-center"
+              style="
+                background: conic-gradient(#10b981 0% 75%, #e5e7eb 70% 100%);
+              ">
+              <div
+                class="absolute w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                <span class="text-sm font-semibold text-green-600 text-center"
+                  >OOP</span
+                >
+              </div>
+            </div>
+
+            <!-- JDBC -->
+            <div
+              class="w-32 h-32 rounded-full relative flex items-center justify-center"
+              style="
+                background: conic-gradient(#6366f1 0% 60%, #e5e7eb 50% 100%);
+              ">
+              <div
+                class="absolute w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                <span class="text-sm font-semibold text-indigo-600 text-center"
+                  >JDBC</span
+                >
+              </div>
+            </div>
+
+            <!-- Spring -->
+            <div
+              class="w-32 h-32 rounded-full relative flex items-center justify-center"
+              style="
+                background: conic-gradient(green 0% 40%, #e5e7eb 40% 100%);
+              ">
+              <div
+                class="absolute w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                <span class="text-sm font-semibold text-green-700 text-center"
+                  >Spring</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Tools Card -->
+        <section class="bg-white shadow-lg rounded-xl p-8">
+          <h2 class="text-2xl font-bold text-center mb-8 text-gray-800">
+            Tools
+          </h2>
+          <div class="flex flex-wrap justify-center gap-6">
+            <!-- VS Code -->
+            <div
+              class="w-32 h-32 rounded-full relative flex items-center justify-center"
+              style="
+                background: conic-gradient(#2563eb 0% 85%, #e5e7eb 85% 100%);
+              ">
+              <div
+                class="absolute w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                <span class="text-sm font-semibold text-blue-600 text-center"
+                  >VS Code</span
+                >
+              </div>
+            </div>
+
+            <!-- GitHub -->
+            <div
+              class="w-32 h-32 rounded-full relative flex items-center justify-center"
+              style="
+                background: conic-gradient(#111827 0% 80%, #e5e7eb 80% 100%);
+              ">
+              <div
+                class="absolute w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                <span class="text-sm font-semibold text-gray-800 text-center"
+                  >GitHub</span
+                >
+              </div>
+            </div>
+
+            <!-- IntelliJ -->
+            <div
+              class="w-32 h-32 rounded-full relative flex items-center justify-center"
+              style="
+                background: conic-gradient(#6d28d9 0% 75%, #e5e7eb 75% 100%);
+              ">
+              <div
+                class="absolute w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                <span class="text-sm font-semibold text-purple-700 text-center"
+                  >IntelliJ</span
+                >
+              </div>
+            </div>
+
+            <!-- Git -->
+            <div
+              class="w-32 h-32 rounded-full relative flex items-center justify-center"
+              style="
+                background: conic-gradient(#ef4444 0% 70%, #e5e7eb 70% 100%);
+              ">
+              <div
+                class="absolute w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                <span class="text-sm font-semibold text-red-600 text-center"
+                  >Git</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- More Card -->
+        <section class="bg-white shadow-lg rounded-xl p-8">
+          <h2 class="text-2xl font-bold text-center mb-8 text-gray-800">
+            More
+          </h2>
+          <div class="flex flex-wrap justify-center gap-6">
+            <!-- Laravel -->
+            <div
+              class="w-32 h-32 rounded-full relative flex items-center justify-center"
+              style="
+                background: conic-gradient(#ef4444 0% 65%, #e5e7eb 65% 100%);
+              ">
+              <div
+                class="absolute w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                <span class="text-sm font-semibold text-red-600 text-center"
+                  >Laravel</span
+                >
+              </div>
+            </div>
+
+            <!-- React -->
+            <div
+              class="w-32 h-32 rounded-full relative flex items-center justify-center"
+              style="
+                background: conic-gradient(#06b6d4 0% 60%, #e5e7eb 70% 100%);
+              ">
+              <div
+                class="absolute w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                <span class="text-sm font-semibold text-cyan-600 text-center"
+                  >React</span
+                >
+              </div>
+            </div>
+
+            <!-- PHP -->
+            <div
+              class="w-32 h-32 rounded-full relative flex items-center justify-center"
+              style="
+                background: conic-gradient(#64748b 0% 65%, #e5e7eb 60% 100%);
+              ">
+              <div
+                class="absolute w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                <span class="text-sm font-semibold text-slate-600 text-center"
+                  >PHP</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-
-      <!-- Code block -->
-      <pre class="whitespace-pre overflow-x-auto" id="codeBlock"><code>
-<span class="text-slate-500 select-none">1&nbsp;</span><span class="text-purple-400">public class</span> <span class="text-blue-400">HomePage</span> {
-<span class="text-slate-500 select-none">2&nbsp;</span>  <span class="text-purple-400">public static class</span> <span class="text-blue-400">DeveloperInfo</span> {
-<span class="text-slate-500 select-none">3&nbsp;</span>    <span class="text-purple-400">String</span> <span class="text-white">name</span>;
-<span class="text-slate-500 select-none">4&nbsp;</span>    <span class="text-purple-400">String</span> <span class="text-white">role</span>;
-<span class="text-slate-500 select-none">5&nbsp;</span>    <span class="text-purple-400">String</span> <span class="text-white">bio</span>;
-<span class="text-slate-500 select-none">6&nbsp;</span>
-<span class="text-slate-500 select-none">7&nbsp;</span>    <span class="text-purple-400">public</span> <span class="text-blue-400">DeveloperInfo</span>(<span class="text-purple-400">String</span> name, <span class="text-purple-400">String</span> role, <span class="text-purple-400">String</span> bio) {
-<span class="text-slate-500 select-none">8&nbsp;</span>      <span class="text-white">this</span>.name = name;
-<span class="text-slate-500 select-none">9&nbsp;</span>      <span class="text-white">this</span>.role = role;
-<span class="text-slate-500 select-none">10</span>      <span class="text-white">this</span>.bio = bio;
-<span class="text-slate-500 select-none">11</span>    }
-<span class="text-slate-500 select-none">12</span>  }
-<span class="text-slate-500 select-none">13</span>
-<span class="text-slate-500 select-none">14</span>  <span class="text-purple-400">public static void</span> <span class="text-blue-400">main</span>(<span class="text-purple-400">String</span>[] args) {
-<span class="text-slate-500 select-none highlight">15</span>    DeveloperInfo dev = <span class="text-keyword">new</span> DeveloperInfo(
-<span class="text-slate-500 select-none">16</span>      <span class="text-green-400">"Aaditya Kolhapure"</span>,
-<span class="text-slate-500 select-none">17</span>      <span class="text-green-400">"Java Developer"</span>,
-<span class="text-slate-500 select-none">18</span>      <span class="text-green-400">"Building scalable and efficient web applications with Java and Laravel."</span>
-<span class="text-slate-500 select-none">19</span>    );
-<span class="text-slate-500 select-none">20</span>
-<span class="text-slate-500 select-none">21</span>    System.out.println(<span class="text-green-400">"=== "</span> + dev.name + <span class="text-green-400">" | Portfolio ===\n"</span>);
-<span class="text-slate-500 select-none">22</span>    System.out.println(<span class="text-green-400">"Name: "</span> + dev.name);
-<span class="text-slate-500 select-none">23</span>    System.out.println(<span class="text-green-400">"Role: "</span> + dev.role);
-<span class="text-slate-500 select-none">24</span>    System.out.println(<span class="text-green-400">"Bio: "</span> + dev.bio);
-<span class="text-slate-500 select-none">25</span>    System.out.println(<span class="text-green-400">"\n[ View Projects ] -> /projects"</span>);
-<span class="text-slate-500 select-none">26</span>  }
-<span class="text-slate-500 select-none">27</span>}
-</code></pre>
     </div>
-
-    <script>
-      function copyCode() {
-        const code = document.getElementById("codeBlock").innerText;
-        navigator.clipboard.writeText(code).then(() => {
-          const btn = document.getElementById("copyBtn");
-          btn.innerText = "✅ Copied";
-          setTimeout(() => (btn.innerText = "📋 Copy"), 2000);
-        });
-      }
-    </script>
   </body>
 </html>
