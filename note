@@ -8,6 +8,7 @@
           <div
             class="h-full px-3 pb-4 dark:bg-[#040015] w-1/5 flex flex-col place-items-center flex justify-start"
           >
+
             <button
               class="text-gray-400 hover:text-white focus:outline-none m-4 hover:bg-gray-700 hover:transform hover:scale-120"
             >
